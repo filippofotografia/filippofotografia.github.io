@@ -1,0 +1,4 @@
+baseURL = "https://filippofotografia.github.io/"
+languageCode = "it-it"
+title = "Filippo | Fotografia"
+theme = "gallery"
