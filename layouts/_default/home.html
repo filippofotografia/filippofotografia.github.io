@@ -1,0 +1,26 @@
+{{ define "main" }}
+  
+  <div style="position: relative; margin: 2rem auto; max-width: 1400px; padding: 0 1rem;">
+    <img src="/images/hero.jpg" alt="" style="width: 100%; height: auto; max-height: 70vh; object-fit: cover; border-radius: 4px; display: block;">
+    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+<div style="color: white; max-width: 600px; font-size: 1.4rem; line-height: 1.6; text-align: center; text-shadow: 0 2px 12px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.6);">
+        <style>
+          .hero-text p { margin-bottom: 1rem; }
+          .hero-text a { color: #7dd3fc; text-decoration: underline; }
+          .hero-text a:hover { color: #bae6fd; }
+        </style>
+        <div class="hero-text">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "categories.html" . }}
+  {{ partial "featured.html" . }}
+  <section class="galleries">
+    {{ range where .Pages "Params.private" "ne" true }}
+      {{ partial "album-card.html" . }}
+    {{ end }}
+  </section>
+{{ end }}

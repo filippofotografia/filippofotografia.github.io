@@ -2,3 +2,23 @@ baseURL = "https://filippofotografia.github.io/"
 languageCode = "it-it"
 title = "Filippo | Fotografia"
 theme = "gallery"
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Chi sono"
+  url = "/chi-sono/"
+  weight = 2
+[[menu.main]]
+  name = "Portfolio"
+  url = "/portfolio/"
+  weight = 3
+[[menu.main]]
+  name = "Lab|Lim"
+  url = "/lablim/"
+  weight = 4
+[[menu.main]]
+  name = "Contatti"
+  url = "/contatti/"
+  weight = 5
