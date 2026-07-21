@@ -1,9 +1,8 @@
 {{ define "main" }}
-  
   <div style="position: relative; margin: 2rem auto; max-width: 1400px; padding: 0 1rem;">
     <img src="/images/hero.jpg" alt="" style="width: 100%; height: auto; max-height: 70vh; object-fit: cover; border-radius: 4px; display: block;">
     <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 2rem;">
-<div style="color: white; max-width: 600px; font-size: 1.4rem; line-height: 1.6; text-align: center; text-shadow: 0 2px 12px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.6);">
+      <div style="color: white; max-width: 600px; font-size: 1.4rem; line-height: 1.6; text-align: center; text-shadow: 0 2px 12px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.6);">
         <style>
           .hero-text p { margin-bottom: 1rem; }
           .hero-text a { color: #7dd3fc; text-decoration: underline; }
@@ -16,11 +15,24 @@
     </div>
   </div>
 
+  <div style="max-width: 1200px; margin: 3rem auto 0; padding: 0 1rem; text-align: center;">
+    <h2>Le ultime gallerie</h2>
+  </div>
+
+  {{ $galleries := where site.RegularPages "Section" "portfolio" }}
+  {{ $galleries = $galleries.ByDate.Reverse }}
+  <div style="max-width: 1100px; margin: 0 auto; padding: 0 1rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+    {{ range first 3 $galleries }}
+      <div style="flex: 1 1 280px; max-width: 320px;">
+        {{ partial "album-card.html" . }}
+      </div>
+    {{ end }}
+  </div>
+
+  <div style="text-align: center; margin: 1.5rem 0 3rem;">
+    <a href="/portfolio/" style="display: inline-block; padding: 0.75rem 2rem; border: 1px solid rgba(255,255,255,0.4); border-radius: 4px; color: inherit; text-decoration: none; font-size: 0.95rem; letter-spacing: 0.05rem; transition: border-color 0.2s;">Vai al portfolio →</a>
+  </div>
+
   {{ partial "categories.html" . }}
   {{ partial "featured.html" . }}
-  <section class="galleries">
-    {{ range where .Pages "Params.private" "ne" true }}
-      {{ partial "album-card.html" . }}
-    {{ end }}
-  </section>
 {{ end }}
