@@ -21,4 +21,11 @@
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}html:has(.pswp--open) {
+  overflow: hidden;
+}.pswp__button--zoom {
+  display: none !important;
+}
+.pswp--caption-hidden .pswp__dynamic-caption {
+  display: none !important;
 }
