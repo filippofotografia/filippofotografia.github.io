@@ -22,5 +22,6 @@ theme = "gallery"
   name = "Contatti"
   url = "/contatti/"
   weight = 5
-  [markup.goldmark.renderer]
+
+[markup.goldmark.renderer]
   unsafe = true

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio on Filippo | Fotografia</title>
-    <link>https://filippofotografia.github.io/portfolio/</link>
+    <link>http://localhost:1313/portfolio/</link>
     <description>Recent content in Portfolio on Filippo | Fotografia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://filippofotografia.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Calabria</title>
-      <link>https://filippofotografia.github.io/portfolio/calabria/</link>
+      <link>http://localhost:1313/portfolio/calabria/</link>
       <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://filippofotografia.github.io/portfolio/calabria/</guid>
-        <media:content url="https://filippofotografia.github.io/portfolio/calabria/al_pontile_di_gioia_tauro_hu_6a66597d77da3465.jpg" type="image/jpeg"/>
+      <guid>http://localhost:1313/portfolio/calabria/</guid>
+        <media:content url="http://localhost:1313/portfolio/calabria/al_pontile_di_gioia_tauro_hu_6a66597d77da3465.jpg" type="image/jpeg"/>
         <description>
-          &lt;img src=&quot;https://filippofotografia.github.io/portfolio/calabria/al_pontile_di_gioia_tauro_hu_6a66597d77da3465.jpg&quot; /&gt;
+          &lt;img src=&quot;http://localhost:1313/portfolio/calabria/al_pontile_di_gioia_tauro_hu_6a66597d77da3465.jpg&quot; /&gt;
           &lt;p&gt;Foto della Calabria e della mia città natale, Reggio Calabria.&lt;/p&gt;
         </description></item>
   </channel>

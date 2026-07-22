@@ -1,0 +1,6 @@
+{{ $isExternal := strings.HasPrefix .Destination "http" }}
+{{ if $isExternal }}
+  <span class="inline-link" data-href="{{ .Destination | safeURL }}" onclick="event.stopPropagation(); window.open(this.dataset.href, '_blank', 'noopener')" style="color: #7dd3fc; text-decoration: underline; cursor: pointer;">{{ .Text | safeHTML }}</span>
+{{ else }}
+  <span class="inline-link" data-href="{{ .Destination | safeURL }}" onclick="event.stopPropagation(); window.location.href = this.dataset.href" style="color: #7dd3fc; text-decoration: underline; cursor: pointer;">{{ .Text | safeHTML }}</span>
+{{ end }}

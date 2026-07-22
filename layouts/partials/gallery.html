@@ -42,11 +42,11 @@
           </span>
         {{ end }}
         <span class="pswp-caption-content" style="display: none;">
-  {{ if .Title }}
-    <span style="display: block; font-weight: 600; font-size: 1.05em; padding-bottom: 0.6rem; margin-bottom: 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.25);">{{ .Title }}</span>
-  {{ end }}
-  {{ with .Params.description }}<span style="display: block;">{{ . | markdownify }}</span>{{ end }}
-</span>
+          {{ if .Title }}
+            <span style="display: block; font-weight: 600; font-size: 1.05em; padding-bottom: 0.6rem; margin-bottom: 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.25);">{{ .Title }}</span>
+          {{ end }}
+          {{ with .Params.description }}<span style="display: block;">{{ . | markdownify }}</span>{{ end }}
+        </span>
       </a>
     {{ end }}
   </div>

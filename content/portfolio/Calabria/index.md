@@ -20,7 +20,7 @@ resources:
   - src: "morano_calabro.jpg"
     title: "Morano Calabro"
     params:
-      description: "Morano Calabro è un comune calabrese situato nella parte settentrionale della provincia di Cosenza. Nel 2003 è stato inserito nel circuito I Borghi più belli d'Italia e ha ottenuto dal Touring Club Italia, La Bandiera arancione Questa foto (anno 2008) è stata esposta in Via Dante a Milano nel 2013, in occasione della mostra fotografica collettiva: 'La Calabria in un click  La stessa foto è stata selezionata per la manifestazione TEMPO LIBERO 2014 di Bolzano e per la BIT 2015 (Borsa Internazionale Turismo). Nell'anno 2020 ho collaborato con Travel365.it, community di viaggi italiana seguita mensilmente da oltre 2milioni di utenti. La foto è stata selezionata per l'articolo sui borghi più belli della Calabria."    
+      description: 'Morano Calabro è un comune calabrese situato nella parte settentrionale della provincia di Cosenza. Nel 2003 è stato inserito nel circuito I Borghi più belli d''Italia e ha ottenuto dal Touring Club Italia, La Bandiera arancione. Questa foto (anno 2008) è stata esposta in Via Dante a Milano nel 2013, in occasione della mostra fotografica collettiva: [La Calabria in un click](https://www.citynow.it/la-calabria-in-un-click-50-scatti-per-raccontare-la-calabria-a-milano/). La stessa foto è stata selezionata per la manifestazione TEMPO LIBERO 2014 di Bolzano e per la BIT 2015 (Borsa Internazionale Turismo). Nell''anno 2020 ho collaborato con Travel365.it, community di viaggi italiana seguita mensilmente da oltre 2 milioni di utenti. La foto è stata selezionata per l''articolo sui borghi più belli della Calabria.'
   - src: "bovalino_marina.jpg"
     title: "Bovalino Marina"
     params:
